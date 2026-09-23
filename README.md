@@ -26,7 +26,6 @@ The website is being developed using:
 
 * HTML
 * CSS
-* JavaScript
 * GitHub for version control
 
 ## Current Progress
