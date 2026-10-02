@@ -6,55 +6,194 @@
     <title>Kidney and Me | Start Here</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+
     <header>
         <nav class="nav">
             <a class="logo" href="index.html">Kidney and Me</a>
+
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="start-here.html">Start Here</a></li>
+                <li>
+                    <a href="start-here.html" aria-current="page">
+                        Start Here
+                    </a>
+                </li>
                 <li><a href="conditions.html">Conditions</a></li>
-                <li><a href="#">Nutrition</a></li>
-                <li><a href="#">Medications</a></li>
+                <li><a href="nutrition.html">Nutrition</a></li>
+                <li><a href="medications.html">Medications</a></li>
                 <li><a href="#">Resources</a></li>
             </ul>
         </nav>
     </header>
 
+
     <main class="container">
-        <h1>New to kidney health? Start here.</h1>
-        <p>Choose what you need help understanding first. These sections are designed to give you a simple starting point without overwhelming you with information.</p>
 
-        <div class="grid">
-            <article class="card">
+        <section class="page-intro">
+            <h1>New to kidney health? Start here.</h1>
+
+            <p>
+                Kidney health can involve a lot of new information.
+                This page gives you a simple place to begin and helps
+                you find the sections that may be most useful to you.
+            </p>
+        </section>
+
+
+        <nav class="quick-links" aria-label="Start here quick links">
+            <a href="#diagnosis">Understanding Your Diagnosis</a>
+            <a href="#terms">Terms &amp; Symptoms</a>
+            <a href="#doctor">Doctor Questions</a>
+            <a href="#basics">Diet &amp; Medication</a>
+        </nav>
+
+
+        <section class="conditions-grid">
+
+            <article class="card" id="diagnosis">
                 <h2>1. Understanding Your Diagnosis</h2>
-                <p>Start with basic information about kidney conditions and terms you may hear from your healthcare provider.</p>
-                <a href="conditions.html">Explore kidney conditions</a>
+
+                <p>
+                    Start by learning about common kidney conditions
+                    and the terms you may hear from your healthcare
+                    provider.
+                </p>
+
+                <a href="conditions.html">Explore Kidney Conditions</a>
             </article>
 
-            <article class="card">
+
+            <article class="card" id="terms">
                 <h2>2. Common Terms and Symptoms</h2>
-                <p>Learn the meaning of common kidney-health terms and how symptoms may be discussed.</p>
+
+                <p>
+                    Understanding common kidney health terms can make
+                    it easier to follow information from your healthcare
+                    provider and learn more about your condition.
+                </p>
+
+                <a href="conditions.html">Learn About Conditions</a>
             </article>
 
-            <article class="card">
+
+            <article class="card" id="doctor">
                 <h2>3. Questions to Ask Your Doctor</h2>
-                <p>Prepare questions about your diagnosis, tests, treatment, diet, and next steps before an appointment.</p>
+
+                <p>
+                    Preparing questions before an appointment can help
+                    you better understand your diagnosis, tests,
+                    medications, diet, and next steps.
+                </p>
+
+                <details>
+                    <summary>Example Questions</summary>
+
+                    <div class="details-content">
+                        <ul>
+                            <li>What is my current kidney function?</li>
+                            <li>Are there foods I should limit?</li>
+                            <li>Could my medications affect my kidneys?</li>
+                            <li>What tests will I need?</li>
+                            <li>When should I schedule my next appointment?</li>
+                        </ul>
+                    </div>
+                </details>
             </article>
 
-            <article class="card">
+
+            <article class="card" id="basics">
                 <h2>4. Diet and Medication Basics</h2>
-                <p>Get an introduction to the diet and medication sections that will be developed during upcoming sprints.</p>
+
+                <p>
+                    Diet and medications can be important parts of
+                    managing kidney health. Use these sections to learn
+                    the basics and prepare questions for your healthcare
+                    provider.
+                </p>
+
+                <div class="related">
+                    <a href="nutrition.html">Diet &amp; Nutrition</a>
+                    <a href="medications.html">Medications</a>
+                </div>
             </article>
-        </div>
+
+        </section>
+
+
+        <section class="condition-section">
+
+            <h2>Where Should I Go Next?</h2>
+
+            <p>
+                Choose a section based on the type of information
+                you are looking for.
+            </p>
+
+
+            <details>
+                <summary>I want to learn about kidney conditions.</summary>
+
+                <div class="details-content">
+                    <p>
+                        Visit the Kidney Conditions page for information
+                        about chronic kidney disease, kidney stones,
+                        kidney failure, and other conditions.
+                    </p>
+
+                    <a href="conditions.html">Go to Kidney Conditions</a>
+                </div>
+            </details>
+
+
+            <details>
+                <summary>I want to learn about food and nutrition.</summary>
+
+                <div class="details-content">
+                    <p>
+                        Visit Diet &amp; Nutrition for information about
+                        sodium, potassium, phosphorus, fluids, and other
+                        nutrition topics.
+                    </p>
+
+                    <a href="nutrition.html">Go to Diet &amp; Nutrition</a>
+                </div>
+            </details>
+
+
+            <details>
+                <summary>I have questions about medications.</summary>
+
+                <div class="details-content">
+                    <p>
+                        Visit Medications for general medication safety
+                        information and questions you can discuss with
+                        your healthcare provider.
+                    </p>
+
+                    <a href="medications.html">Go to Medications</a>
+                </div>
+            </details>
+
+        </section>
+
 
         <div class="notice">
-            <strong>Important:</strong> Kidney and Me is being developed for educational purposes. It is not a replacement for medical advice, diagnosis, or treatment from a qualified healthcare professional.
+            <strong>Medical Disclaimer:</strong>
+            Kidney and Me provides educational information only.
+            This website is not a replacement for professional medical
+            advice, diagnosis, or treatment.
         </div>
+
     </main>
 
+
     <footer>
-        <p>Kidney and Me — Educational kidney health information and resources.</p>
+        <p>
+            Kidney and Me — Educational kidney health information and resources.
+        </p>
     </footer>
+
 </body>
 </html>
