@@ -3,173 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kidney and Me provides simple educational kidney health information and trusted resources.">
     <title>Kidney and Me | Kidney Conditions</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <header>
-        <nav class="nav">
+        <nav class="nav" aria-label="Main navigation">
             <a class="logo" href="index.html">Kidney and Me</a>
-
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="start-here.html">Start Here</a></li>
-                <li><a href="conditions.html">Conditions</a></li>
+                <li><a href="conditions.html" aria-current="page">Conditions</a></li>
                 <li><a href="nutrition.html">Nutrition</a></li>
                 <li><a href="medications.html">Medications</a></li>
-                <li><a href="#">Resources</a></li>
+                <li><a href="warning-signs.html">Warning Signs</a></li>
+                <li><a href="resources.html">Resources</a></li>
             </ul>
         </nav>
     </header>
-
-
-    <main class="container">
-
-        <section class="page-intro">
-            <h1>Kidney Conditions</h1>
-
-            <p>
-                Learn about common kidney conditions, possible symptoms,
-                risk factors, and other topics related to kidney health.
-            </p>
+    <main id="main-content" class="container">
+        <section class="page-intro"><p class="eyebrow">Understand the basics</p><h1>Kidney Conditions</h1><p>Kidney problems can have different causes and treatments. This page gives a short overview and connects you to reliable sources for more detail.</p></section>
+        <nav class="quick-links" aria-label="Condition quick links"><a href="#ckd">Chronic Kidney Disease</a><a href="#stones">Kidney Stones</a><a href="#failure">Kidney Failure</a></nav>
+        <section class="condition-section" id="ckd"><h2>Chronic Kidney Disease (CKD)</h2><p>CKD means the kidneys are damaged or have a structural problem and cannot filter blood as well as they should. Diabetes and high blood pressure are the most common causes in adults.</p>
+            <details><summary>Symptoms</summary><div class="details-content"><p>Early CKD often has no symptoms. As CKD advances, possible symptoms include swelling, tiredness, trouble concentrating, changes in urination, nausea, itching, muscle cramps, chest pain, or shortness of breath.</p></div></details>
+            <details><summary>Risk factors</summary><div class="details-content"><p>Important risk factors include diabetes, high blood pressure, heart disease, and a family history of kidney failure.</p></div></details>
+            <details><summary>Management</summary><div class="details-content"><p>Management may include controlling blood pressure and blood glucose, taking medicines as prescribed, following an individualized eating plan, staying active, and monitoring kidney health with a healthcare team.</p></div></details>
+            <div class="related"><strong>Related topics</strong><a href="nutrition.html">Nutrition</a><a href="medications.html">Medications</a><a href="warning-signs.html">Warning Signs</a></div>
         </section>
-
-
-        <nav class="quick-links" aria-label="Kidney condition quick links">
-            <a href="#ckd">Chronic Kidney Disease</a>
-            <a href="#stones">Kidney Stones</a>
-            <a href="#failure">Kidney Failure</a>
-            <a href="#other">Other Conditions</a>
-        </nav>
-
-
-        <section class="condition-section" id="ckd">
-
-            <h2>Chronic Kidney Disease</h2>
-
-            <p>
-                Chronic kidney disease, also called CKD, happens when the
-                kidneys are damaged and have difficulty filtering blood
-                properly over a long period of time.
-            </p>
-
-
-            <details>
-                <summary>Common Symptoms</summary>
-
-                <div class="details-content">
-                    <p>
-                        Kidney disease may not always cause noticeable
-                        symptoms during its early stages. Symptoms can
-                        become more noticeable as kidney function decreases.
-                    </p>
-
-                    <ul>
-                        <li>Feeling tired</li>
-                        <li>Swelling in the feet or ankles</li>
-                        <li>Changes in urination</li>
-                        <li>Difficulty concentrating</li>
-                    </ul>
-                </div>
-            </details>
-
-
-            <details>
-                <summary>Causes and Risk Factors</summary>
-
-                <div class="details-content">
-                    <p>
-                        Different health conditions can increase a person's
-                        risk of developing chronic kidney disease. A healthcare
-                        provider can help determine individual risk factors.
-                    </p>
-                </div>
-            </details>
-
-
-            <details>
-                <summary>Treatment and Management</summary>
-
-                <div class="details-content">
-                    <p>
-                        Treatment depends on the cause and stage of kidney
-                        disease. Healthcare providers may recommend changes
-                        involving medications, diet, lifestyle, or other
-                        treatments.
-                    </p>
-                </div>
-            </details>
-
-
-            <div class="related">
-                <strong>Related Topics</strong>
-
-                <a href="nutrition.html">Diet &amp; Nutrition</a>
-                <a href="medications.html">Medications</a>
-                <a href="#">Warning Signs</a>
-                <a href="start-here.html">Start Here</a>
-            </div>
-
-        </section>
-
-
         <section class="conditions-grid">
-
-            <article class="card" id="stones">
-                <h2>Kidney Stones</h2>
-
-                <p>
-                    Kidney stones are hard deposits that form inside the
-                    kidneys. Their size, cause, and treatment can vary.
-                </p>
-
-                <a href="#">Learn more</a>
-            </article>
-
-
-            <article class="card" id="failure">
-                <h2>Kidney Failure</h2>
-
-                <p>
-                    Kidney failure occurs when the kidneys lose most of
-                    their ability to properly filter the blood.
-                </p>
-
-                <a href="#">Learn more</a>
-            </article>
-
-
-            <article class="card" id="other">
-                <h2>Other Conditions</h2>
-
-                <p>
-                    Additional kidney conditions and related information
-                    will be added as the website continues to grow.
-                </p>
-
-                <a href="#">View conditions</a>
-            </article>
-
+            <article class="card" id="stones"><h2>Kidney Stones</h2><p>Kidney stones are solid pieces of material that form in one or both kidneys. Symptoms and treatment depend on the stone and the individual.</p><a href="resources.html">Find trusted information</a></article>
+            <article class="card" id="failure"><h2>Kidney Failure</h2><p>Kidney failure means the kidneys have lost most of their ability to function. Treatment options may include dialysis, kidney transplant, or conservative management with a healthcare team.</p><a href="resources.html">Find trusted information</a></article>
         </section>
-
-
         <div class="notice">
-            <strong>Medical Disclaimer:</strong>
-            Kidney and Me provides educational information only.
-            This website is not a replacement for professional medical
-            advice, diagnosis, or treatment.
+            <strong>Medical Disclaimer:</strong> Kidney and Me provides educational information only. It does not replace professional medical advice, diagnosis, or treatment. Talk with a qualified healthcare professional about your individual needs.
         </div>
-
     </main>
-
-
     <footer>
-        <p>
-            Kidney and Me — Educational kidney health information and resources.
-        </p>
+        <p>Kidney and Me — Educational kidney health information and resources.</p>
+        <p class="reviewed">Content reviewed for project use: October 2026</p>
     </footer>
-
 </body>
 </html>
