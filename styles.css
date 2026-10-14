@@ -362,3 +362,20 @@ footer p {
         padding: 20px;
     }
 }
+
+
+/* Interactive Health Guide */
+.guide-panel{background:#fff;border:1px solid #dbe5e1;border-radius:9px;padding:28px;margin:28px 0}
+.guide-step{border:0;padding:0;margin:0}
+.guide-step legend{font-size:1.2rem;font-weight:700;margin-bottom:16px}
+.guide-step label{display:flex;align-items:center;gap:12px;border:1px solid #cbded6;border-radius:7px;padding:13px;margin:10px 0;cursor:pointer}
+.guide-step label:has(input:checked){background:#e8f2ee;border-color:#285f52}
+.guide-step label:focus-within{outline:3px solid #8fb9ad;outline-offset:2px}
+.guide-step input{width:19px;height:19px;accent-color:#285f52}
+.guide-actions{display:flex;gap:12px;margin-top:22px}
+.guide-actions button,#restart{font:inherit;font-weight:700;border:2px solid #285f52;border-radius:7px;padding:10px 20px;background:#fff;color:#285f52;cursor:pointer}
+#next{background:#285f52;color:#fff}
+#guide-error{color:#9b2c2c;font-weight:700}
+#pages li,#questions li{margin:10px 0}
+[hidden]{display:none!important}
+@media(max-width:600px){.guide-panel{padding:20px}}
