@@ -1,4 +1,4 @@
-# # Kidney and Me
+# Kidney and Me
 
 ## About the Project
 
@@ -41,3 +41,9 @@ Because the website is intended to be easy to use for older adults, accessibilit
 ## Medical Disclaimer
 
 Kidney and Me is intended for educational purposes only. The information provided on the website is not a replacement for professional medical advice, diagnosis, or treatment. Users should speak with a qualified healthcare professional about medical concerns.
+
+## Interactive Health Guide
+
+The JavaScript-powered guide asks three questions and provides educational page links and general questions for healthcare professionals. Answers are processed in the browser and are not stored or transmitted. It does not diagnose or provide treatment advice.
+
+The guide and website should be tested across browsers and screen sizes before the final capstone demonstration.
