@@ -1,1 +1,94 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Kidney and Me | Health Guide</title><link rel="stylesheet" href="styles.css"><script src="health-guide.js" defer></script></head><body><a class="skip-link" href="#main">Skip to content</a><header><nav class="nav" aria-label="Main navigation"><a class="logo" href="index.html">Kidney and Me</a><ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="start-here.html">Start Here</a></li><li><a href="conditions.html">Conditions</a></li><li><a href="nutrition.html">Nutrition</a></li><li><a href="medications.html">Medications</a></li><li><a href="warning-signs.html">Warning Signs</a></li><li><a href="resources.html">Resources</a></li><li><a href="health-guide.html" aria-current="page">Health Guide</a></li></ul></nav></header><main class="container" id="main"><h1>Interactive Kidney Health Guide</h1><p>Answer three questions to find relevant educational topics and questions for your healthcare team. Your answers are not stored or sent anywhere.</p><div class="notice"><strong>Educational only:</strong> This guide does not diagnose, assess symptoms, or provide personalized treatment. <a href="warning-signs.html">Read warning signs.</a></div><section class="guide-panel"><h2>Find your starting point</h2><p id="progress" aria-live="polite">Question 1 of 3</p><form id="guide"><fieldset class="guide-step"><legend>What would you like to learn about?</legend><label><input required type="radio" name="topic" value="new"> Getting started</label><label><input type="radio" name="topic" value="conditions"> Kidney conditions</label><label><input type="radio" name="topic" value="nutrition"> Nutrition</label><label><input type="radio" name="topic" value="medications"> Medications</label><label><input type="radio" name="topic" value="warning"> Warning signs</label></fieldset><fieldset class="guide-step" hidden><legend>What would help you most?</legend><label><input type="radio" name="help" value="basics"> Simple explanations</label><label><input type="radio" name="help" value="questions"> Questions for my doctor</label><label><input type="radio" name="help" value="resources"> Trusted resources</label></fieldset><fieldset class="guide-step" hidden><legend>What would you like to do next?</legend><label><input type="radio" name="next" value="read"> Read more</label><label><input type="radio" name="next" value="appointment"> Prepare for an appointment</label></fieldset><p id="guide-error" role="alert" hidden>Choose an answer to continue.</p><div class="guide-actions"><button type="button" id="back" hidden>Back</button><button type="button" id="next">Next</button></div></form><section id="results" hidden aria-live="polite"><h2 tabindex="-1" id="result-heading">Your educational starting points</h2><p id="intro"></p><h3>Recommended pages</h3><ul id="pages"></ul><h3>Questions for your healthcare team</h3><ul id="questions"></ul><button type="button" id="restart">Start again</button></section></section></main><footer><p>Kidney and Me — Educational information only, not medical advice.</p></footer></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore kidney health education topics with a simple interactive guide.">
+    <title>Kidney and Me | Health Guide</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="health-guide.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header>
+        <nav class="nav" aria-label="Main navigation">
+            <a class="logo" href="index.html">Kidney and Me</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="start-here.html">Start Here</a></li>
+                <li><a href="conditions.html">Conditions</a></li>
+                <li><a href="nutrition.html">Nutrition</a></li>
+                <li><a href="medications.html">Medications</a></li>
+                <li><a href="warning-signs.html">Warning Signs</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="health-guide.html" aria-current="page">Health Guide</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content" class="container">
+        <section class="page-intro">
+            <p class="eyebrow">Interactive learning tool</p>
+            <h1>Kidney Health Guide</h1>
+            <p>Answer three quick questions to find useful educational pages and questions to discuss with your healthcare team.</p>
+            <p><strong>Privacy:</strong> Your answers are used only in this browser session to display results. They are not sent to a server or saved.</p>
+        </section>
+
+        <div class="notice" role="note">
+            <strong>Important:</strong> This guide is educational. It does not diagnose conditions, assess symptoms, or recommend treatment. For urgent or severe symptoms, seek appropriate medical care. <a href="warning-signs.html">Read warning signs</a>.
+        </div>
+
+        <section class="guide-panel" aria-labelledby="guide-title">
+            <h2 id="guide-title">Find your starting point</h2>
+            <p id="guide-progress" class="guide-progress" aria-live="polite">Question 1 of 3</p>
+            <div class="guide-progress-track" aria-hidden="true"><div id="guide-progress-fill" class="guide-progress-fill"></div></div>
+            <form id="guide-form" novalidate>
+                <fieldset class="guide-step" data-step="0">
+                    <legend>What would you like to learn about?</legend>
+                    <label class="guide-choice"><input type="radio" name="topic" value="new"> I am new to kidney health information</label>
+                    <label class="guide-choice"><input type="radio" name="topic" value="conditions"> Kidney conditions</label>
+                    <label class="guide-choice"><input type="radio" name="topic" value="nutrition"> Diet and nutrition</label>
+                    <label class="guide-choice"><input type="radio" name="topic" value="medications"> Medication safety</label>
+                    <label class="guide-choice"><input type="radio" name="topic" value="symptoms"> Warning signs and when to get help</label>
+                </fieldset>
+
+                <fieldset class="guide-step" data-step="1" hidden>
+                    <legend>What type of information would be most helpful?</legend>
+                    <label class="guide-choice"><input type="radio" name="format" value="basics"> A simple explanation</label>
+                    <label class="guide-choice"><input type="radio" name="format" value="questions"> Questions to ask a healthcare professional</label>
+                    <label class="guide-choice"><input type="radio" name="format" value="resources"> Trusted websites for further reading</label>
+                </fieldset>
+
+                <fieldset class="guide-step" data-step="2" hidden>
+                    <legend>Where would you like to go next?</legend>
+                    <label class="guide-choice"><input type="radio" name="next" value="read"> Read about the topic now</label>
+                    <label class="guide-choice"><input type="radio" name="next" value="prepare"> Prepare for a healthcare appointment</label>
+                </fieldset>
+
+                <p id="guide-error" class="guide-error" role="alert" hidden>Please select an answer before continuing.</p>
+                <div class="guide-actions">
+                    <button type="button" id="guide-back" class="guide-secondary" hidden>Back</button>
+                    <button type="button" id="guide-next" class="button">Next</button>
+                </div>
+            </form>
+        </section>
+
+        <section id="guide-results" class="guide-panel" aria-labelledby="results-title" hidden tabindex="-1">
+            <h2 id="results-title">Your Learning Guide</h2>
+            <p id="results-intro"></p>
+            <h3>Recommended pages</h3>
+            <ul id="results-links" class="guide-results-list"></ul>
+            <h3>Questions you could ask your healthcare professional</h3>
+            <ul id="results-questions"></ul>
+            <p id="results-extra"></p>
+            <div class="guide-actions"><button type="button" id="guide-restart" class="button">Start Again</button></div>
+        </section>
+
+        <div class="notice"><strong>Medical Disclaimer:</strong> Kidney and Me provides educational information only and does not replace professional medical advice, diagnosis, or treatment.</div>
+    </main>
+
+    <footer>
+        <p>Kidney and Me — Educational kidney health information and resources.</p>
+    </footer>
+</body>
+</html>
